@@ -1,0 +1,8 @@
+{
+  "name": "어업인 작업일지 관리자 시스템 (Fisherman Admin)",
+  "description": "어업인 계정 관리, 작업일지 양식 설정 및 수집된 데이터 조회를 위한 통합 관리자 플랫폼입니다.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
