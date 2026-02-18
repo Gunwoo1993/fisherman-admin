@@ -17,12 +17,12 @@ import {
   X,
   ShieldAlert
 } from 'lucide-react';
-import FishermanManagement from './components/FishermanManagement.tsx';
-import WorkLogManagement from './components/WorkLogManagement.tsx';
-import TemplateManagement from './components/TemplateManagement.tsx';
-import NoticeManagement from './components/NoticeManagement.tsx';
-import DBSchemaDesign from './components/DBSchemaDesign.tsx';
-import CageAssetManagement from './components/CageAssetManagement.tsx';
+import FishermanManagement from './components/FishermanManagement';
+import WorkLogManagement from './components/WorkLogManagement';
+import TemplateManagement from './components/TemplateManagement';
+import NoticeManagement from './components/NoticeManagement';
+import DBSchemaDesign from './components/DBSchemaDesign';
+import CageAssetManagement from './components/CageAssetManagement';
 
 type ViewType = 'fisherman' | 'worklog' | 'template' | 'notice' | 'db-design' | 'cage-assets';
 
@@ -236,7 +236,7 @@ const App: React.FC = () => {
       {/* DB 설정 인증 모달 */}
       {showDBAuthModal && (
         <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[250] flex items-center justify-center p-4">
-          <div className="bg-white rounded-[32px] shadow-2xl w-full max-w-sm overflow-hidden animate-fadeIn p-8 text-center space-y-6">
+          <div className="bg-white rounded-[32px] shadow-2xl w-full max-sm:max-w-xs overflow-hidden animate-fadeIn p-8 text-center space-y-6">
             <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto shadow-inner">
               <ShieldAlert size={32} />
             </div>
