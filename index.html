@@ -7,7 +7,6 @@
     <title>어업인 작업일지 시스템</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <!-- FontAwesome 추가 (아이콘 활성화) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body { font-family: 'Inter', 'Noto Sans KR', sans-serif; -webkit-font-smoothing: antialiased; }
@@ -16,12 +15,8 @@
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         .animate-fadeIn { animation: fadeIn 0.4s ease-out forwards; }
-        
-        /* 토스풍 애니메이션 및 스타일 */
         .toss-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
         .toss-card:active { transform: scale(0.97); }
-
-        /* 날짜 입력창 전체 클릭 가능하게 만들기 및 브라우저 기본 아이콘 숨기기 */
         input[type="date"]::-webkit-calendar-picker-indicator {
             position: absolute;
             left: 0;
@@ -40,15 +35,13 @@
 <script type="importmap">
 {
   "imports": {
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.574.0",
     "react/": "https://esm.sh/react@^19.2.4/",
     "react": "https://esm.sh/react@^19.2.4",
-    "recharts": "https://esm.sh/recharts@^3.7.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react-dom/client": "https://esm.sh/react-dom@^19.2.4/client",
-    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.48.1",
-    "vite": "https://esm.sh/vite@^7.3.1",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4"
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.96.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
   }
 }
 </script>
@@ -56,7 +49,6 @@
 </head>
 <body class="bg-[#F2F4F6] text-[#191F28]">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
-<script type="module" src="/index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
